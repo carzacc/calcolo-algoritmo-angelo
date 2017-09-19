@@ -15,11 +15,18 @@ public:
   {
     if(GSa==0)
     {
-      CS=CS+1;
+      punti=punti+quotaCS;
+    }
+    else
+    {
+       punti=punti+1.5;
+    }
+    if(GFa>0)
+    {
+       punti=punti+1.3;
     }
     GF=GF+GFa;
     GS=GS+GSa;
-    punti=GF*quotaGF+CS*quotaCS-GS*quotaGS;
   }
   squadra()
   {
