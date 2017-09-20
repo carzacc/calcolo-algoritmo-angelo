@@ -5,7 +5,7 @@ int main()
   //classifica();
   cout << "Inter\t\t" << Inter.punti << endl;
   cout << "Napoli\t\t" << Napoli.punti << endl;
-  cout << "perdentus\t" << juventus.punti << endl;  
+  cout << "juventus\t" << juventus.punti << endl;  
   cout << "Lazio\t\t" << Lazio.punti << endl;
   cout << "Milan\t\t" << Milan.punti << endl;
   cout << "Torino\t\t" << Torino.punti << endl;
