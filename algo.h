@@ -60,28 +60,7 @@ squadra Sassuolo;
 squadra Crotone;
 squadra HellasVerona;
 squadra Benevento;
-/*void squadre()
-{
-  squadra Inter;
-  squadra Napoli;
-  squadra juventus;
-  squadra Lazio;
-  squadra Milan;
-  squadra Sampdoria;
-  squadra Roma;
-  squadra Fiorentina;
-  squadra Cagliari;
-  squadra Atalanta;
-  squadra ChievoVerona;
-  squadra Bologna;
-  squadra Spal;
-  squadra Udinese;
-  squadra Genoa;
-  squadra Sassuolo;
-  squadra Crotone;
-  squadra HellasVerona;
-  squadra Benevento;
-}*/
+
 void partita(string squadra1, string squadra2, int goal1, int goal2)
 {
   if(squadra1==string("Inter"))
@@ -296,7 +275,7 @@ void partite()
   partita("Genoa","Lazio",2,3);
 //partita("Bologna","Inter",1,1);
 }
-void classifica()
+/*void classifica()
 {
   for(float i=10000; i>=0; i=i-0.1)
   {
@@ -381,4 +360,4 @@ void classifica()
       cout << "Benevento\t" << Benevento.punti << endl;
     }
   }
-}
+}*/

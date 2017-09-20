@@ -1,7 +1,6 @@
 #include "algo.h"
 int main()
 {
-  //squadre();
   partite();
   //classifica();
   cout << "Inter\t\t" << Inter.punti << endl;
