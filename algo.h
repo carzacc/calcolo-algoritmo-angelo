@@ -293,6 +293,7 @@ void partite()
   partita("Torino","Sampdoria",2,2);
   partita("Chievo","Atalanta",1,1);
   partita("Genoa","Lazio",2,3);
+//partita("Bologna","Inter",1,1);
 }
 void classifica()
 {
