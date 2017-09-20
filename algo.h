@@ -19,7 +19,10 @@ public:
     }
     else
     {
-       punti=punti+1.5;
+	if(GSa==1)
+	{
+ 	punti=punti+1.5;
+	}
     }
     if(GFa>0)
     {
