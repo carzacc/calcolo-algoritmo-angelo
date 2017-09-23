@@ -17,11 +17,13 @@ public:
     {
       punti=punti+quotaCS;
     }
-    if(GSa==1)
+    else
     {
-      punti=punti+1.5;
+    	if(GSa==1)
+    	{
+      	punti=punti+1.5;
+    	}
     }
-
     if(GFa>0)
     {
       punti=punti+1.3;
@@ -273,7 +275,16 @@ void partite()
   partita("Torino","Sampdoria",2,2);
   partita("Chievo","Atalanta",1,1);
   partita("Genoa","Lazio",2,3);
-//partita("Bologna","Inter",1,1);
+  partita("Bologna","Inter",1,1);
+  partita("Benevento","Roma",0,4);
+  partita("Atalanta","Crotone",5,1);
+  partita("Cagliari","Sassuolo",0,1);
+  partita("Genoa","Chievo",1,1);
+  partita("juventus", "Fiorentina",1,0);
+  partita("Lazio","Napoli",1,4);
+  partita("Milan","Spal",2,0);
+  partita("Udinese","Torino",2,3);
+  partita("Verona", "Sampdoria",0,0);
 }
 /*void classifica()
 {
