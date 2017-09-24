@@ -262,7 +262,7 @@ void partite(int numeropartite)
   partita("Sampdoria","Benevento",2,1);
   partita("Sassuolo","Genoa",0,0);
   partita("Udinese","Chievo",1,2);
-  partita("Benevento","Bologna",1,0);
+  partita("Benevento","Bologna",0,1);
   partita("Genoa","juventus",2,4);
   partita("Roma","Inter",1,3);
   partita("Torino","Sassuolo",3,0);
