@@ -11,8 +11,18 @@ public:
   float quotaGS;
   float quotaGF;
   float punti;
+  int puntiTrad;
   void aggiungipartita(int GFa,int GSa)
   {
+    if(GFa>GSa)
+    {
+      puntiTrad=puntiTrad+3;
+    }
+      if(GFa==GSa)
+    {
+      puntiTrad=puntiTrad+1;  
+    }
+
     if(GSa==0)
     {
       punti=punti+quotaCS;
@@ -40,6 +50,7 @@ public:
     quotaGS=1.5;
     quotaGF=1.3;
     punti=0;
+    puntiTrad=0;
   }
 };
 squadra Inter;
@@ -237,6 +248,7 @@ void partita(string squadra1, string squadra2, int goal1, int goal2)
 void partite()
 {
   partita("a","b",3,0);
+  partita("juventus","Cagliari",3,0);
   partita("Verona","Napoli",1,3);
   partita("Atalanta","Roma",0,1);
   partita("Bologna","Torino",1,1);
