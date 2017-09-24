@@ -245,8 +245,11 @@ void partita(string squadra1, string squadra2, int goal1, int goal2)
     Benevento.aggiungipartita(goal2,goal1);
   }
 }
-void partite()
+void partite(int numeropartite)
 {
+  bool soloquarta=0;
+  if(numeropartite<5)
+  soloquarta=1;
   partita("a","b",3,0);
   partita("juventus","Cagliari",3,0);
   partita("Verona","Napoli",1,3);
@@ -287,6 +290,8 @@ void partite()
   partita("Torino","Sampdoria",2,2);
   partita("Chievo","Atalanta",1,1);
   partita("Genoa","Lazio",2,3);
+  if(!soloquarta)
+  {
   partita("Bologna","Inter",1,1);
   partita("Benevento","Roma",0,4);
   partita("Atalanta","Crotone",5,1);
@@ -297,6 +302,7 @@ void partite()
   partita("Milan","Spal",2,0);
   partita("Udinese","Torino",2,3);
   partita("Verona", "Sampdoria",0,0);
+  }
 }
 /*void classifica()
 {
