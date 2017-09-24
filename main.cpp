@@ -1,7 +1,12 @@
 #include "algo.h"
 int main(int argc, char** argv)
 {
-  partite(argv[1]);
+  if(argc!=1){
+  int giornate = stoi(argv[1]);
+  partite(giornate);
+  }
+  else
+  partite(ultimagiornata);
   //classifica();
   cout << "Inter\t\t" << Inter.punti << "\t\tTrad\t" << Inter.puntiTrad << "\tSomma\t" << Inter.punti+Inter.puntiTrad <<  endl;
   cout << "Napoli\t\t" << Napoli.punti << "\t\tTrad\t" << Napoli.puntiTrad << "\tSomma\t" << Napoli.punti+Napoli.puntiTrad <<  endl;
