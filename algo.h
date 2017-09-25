@@ -319,6 +319,7 @@ void partite(int numeropartite)
 	partita("Sassuolo", "Bologna",0,1);
 	partita("Fiorentina","Atalanta",1,1);
   	}
+  }
 }
 /*void classifica()
 {
