@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int ultimagiornata=5;
+int ultimagiornata=6;
 class squadra
 {
 public:
@@ -249,8 +249,11 @@ void partita(string squadra1, string squadra2, int goal1, int goal2)
 void partite(int numeropartite)
 {
   bool soloquarta=0;
+  bool finoquinta=0;
   if(numeropartite<5)
   soloquarta=1;
+  if(numeropartite<6)
+  finoquinta=1;
   partita("a","b",3,0);
   partita("juventus","Cagliari",3,0);
   partita("Verona","Napoli",1,3);
@@ -303,7 +306,19 @@ void partite(int numeropartite)
   partita("Milan","Spal",2,0);
   partita("Udinese","Torino",2,3);
   partita("Verona", "Sampdoria",0,0);
-  }
+	if(!finoquinta)
+	{
+	partita("Roma","Udinese",3,1);
+	partita("Spal","Napoli",2,3);
+	partita("juventus","Torino",4,0);
+	partita("Sampdoria","Milan",2,0);
+	partita("Cagliari","Chievo",0,2);
+	partita("Crotone", "Benevento",2,0);
+	partita("Verona","Lazio",0,3);
+	partita("Inter","Genoa",1,0);
+	partita("Sassuolo", "Bologna",0,1);
+	partita("Fiorentina","Atalanta",1,1);
+  	}
 }
 /*void classifica()
 {
