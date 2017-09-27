@@ -1,3 +1,22 @@
+/*
+    Copyright (C) 2017 carzacc
+    This file is part of nostraseriea.
+
+    nostraseriea is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    nostraseriea is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with nostraseriea.  If not, see <http://www.gnu.org/licenses/>.
+*/
+#ifndef ALGO_H
+#define ALGO_H
 #include <iostream>
 #include <string>
 using namespace std;
@@ -407,3 +426,4 @@ void partite(int numeropartite)
     }
   }
 }*/
+#endif
