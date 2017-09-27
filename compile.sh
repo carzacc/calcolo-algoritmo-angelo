@@ -1,4 +1,5 @@
 #!/bin/sh
-g++ -c partite.cpp;
-g++ -c seriea.cpp;
-g++ -o seriea partite.cpp seriea.cpp;
+cd build;
+g++ -c ../src/partite.cpp;
+g++ -c ../src/seriea.cpp;
+g++ -o ../bin/seriea partite.o seriea.o;

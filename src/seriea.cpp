@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with lanostraseriea.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include "algo.h"
+#include "include/algo.h"
 
 //Squadre della Serie A
 squadra Inter;

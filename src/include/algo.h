@@ -1,4 +1,4 @@
-//Questo file definisce classi e funzioni usate nel programma
+//Questo file dichiara classi e funzioni usate nel programma
 /*
     Copyright (C) 2017 carzacc
     This file is part of lanostraseriea.
