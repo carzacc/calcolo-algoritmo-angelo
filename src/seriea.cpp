@@ -41,6 +41,16 @@ squadra HellasVerona;
 squadra Benevento;
 
 // Definizione costruttorte
+
+float squadra::getPunti()
+{
+	return punti;
+}
+float squadra::getPuntiTrad()
+{
+	return puntiTrad;
+}
+
 squadra::squadra()
 {
   CS=0;
@@ -271,25 +281,25 @@ int main(int argc, char** argv)
   else
   partite(ultimagiornata);
   //classifica();
-  cout << "Inter\t\t" << Inter.punti << "\t\tTrad\t" << Inter.puntiTrad << "\tSomma\t" << Inter.punti+Inter.puntiTrad <<  endl;
-  cout << "Napoli\t\t" << Napoli.punti << "\t\tTrad\t" << Napoli.puntiTrad << "\tSomma\t" << Napoli.punti+Napoli.puntiTrad <<  endl;
-  cout << "juventus\t" << juventus.punti << "\t\tTrad\t" << juventus.puntiTrad << "\tSomma\t" << juventus.punti+juventus.puntiTrad <<  endl; 
-  cout << "Lazio\t\t" << Lazio.punti << "\t\tTrad\t" << Lazio.puntiTrad << "\tSomma\t" << Lazio.punti+Lazio.puntiTrad <<  endl;
-  cout << "Milan\t\t" << Milan.punti << "\t\tTrad\t" << Milan.puntiTrad << "\tSomma\t" << Milan.punti+Milan.puntiTrad <<  endl;
-  cout << "Torino\t\t" << Torino.punti << "\t\tTrad\t" << Torino.puntiTrad << "\tSomma\t" << Torino.punti+Torino.puntiTrad <<  endl;
-  cout << "Sampdoria\t" << Sampdoria.punti << "\t\tTrad\t" << Sampdoria.puntiTrad << "\tSomma\t" << Sampdoria.punti+Sampdoria.puntiTrad <<  endl;
-  cout << "Roma\t\t" << Roma.punti << "\t\tTrad\t" << Roma.puntiTrad << "\tSomma\t" << Roma.punti+Roma.puntiTrad <<  endl;
-  cout << "Fiorentina\t" << Fiorentina.punti << "\t\tTrad\t" << Fiorentina.puntiTrad << "\tSomma\t" << Fiorentina.punti+Fiorentina.puntiTrad <<  endl; 
-  cout << "Cagliari\t" << Cagliari.punti << "\t\tTrad\t" << Cagliari.puntiTrad << "\tSomma\t" << Cagliari.punti+Cagliari.puntiTrad <<  endl;  
-  cout << "Atalanta\t" << Atalanta.punti << "\t\tTrad\t" << Atalanta.puntiTrad << "\tSomma\t" << Atalanta.punti+Atalanta.puntiTrad <<  endl; 
-  cout << "Chievo\t\t" << ChievoVerona.punti << "\t\tTrad\t" << ChievoVerona.puntiTrad << "\tSomma\t" << ChievoVerona.punti+ChievoVerona.puntiTrad <<  endl;
-  cout << "Bologna\t\t" << Bologna.punti << "\t\tTrad\t" << Bologna.puntiTrad << "\tSomma\t" << Bologna.punti+Bologna.puntiTrad <<  endl;
-  cout << "Spal\t\t" << Spal.punti << "\t\tTrad\t" << Spal.puntiTrad << "\tSomma\t" << Spal.punti+Spal.puntiTrad <<  endl;
-  cout << "Udinese\t\t" << Udinese.punti << "\t\tTrad\t" << Udinese.puntiTrad << "\tSomma\t" << Udinese.punti+Udinese.puntiTrad <<  endl;
-  cout << "Genoa\t\t" << Genoa.punti << "\t\tTrad\t" << Genoa.puntiTrad << "\tSomma\t" << Genoa.punti+Genoa.puntiTrad <<  endl;
-  cout << "Sassuolo\t" << Sassuolo.punti << "\t\tTrad\t" << Sassuolo.puntiTrad << "\tSomma\t" << Sassuolo.punti+Sassuolo.puntiTrad <<  endl;
-  cout << "Crotone\t\t" << Crotone.punti << "\t\tTrad\t" << Crotone.puntiTrad << "\tSomma\t" << Crotone.punti+Crotone.puntiTrad <<  endl;  
-  cout << "Hellas Verona\t" << HellasVerona.punti << "\t\tTrad\t" << HellasVerona.puntiTrad << "\tSomma\t" << HellasVerona.punti+HellasVerona.puntiTrad <<  endl;
-  cout << "Benevento\t" << Benevento.punti << "\t\tTrad\t" << Benevento.puntiTrad << "\tSomma\t" << Benevento.punti+Benevento.puntiTrad <<  endl;
+  cout << "Inter\t\t" << Inter.getPunti() << "\t\tTrad\t" << Inter.getPuntiTrad() << "\tSomma\t" << Inter.getPunti()+Inter.getPuntiTrad() <<  endl;
+  cout << "Napoli\t\t" << Napoli.getPunti() << "\t\tTrad\t" << Napoli.getPuntiTrad() << "\tSomma\t" << Napoli.getPunti()+Napoli.getPuntiTrad() <<  endl;
+  cout << "juventus\t" << juventus.getPunti() << "\t\tTrad\t" << juventus.getPuntiTrad() << "\tSomma\t" << juventus.getPunti()+juventus.getPuntiTrad() <<  endl; 
+  cout << "Lazio\t\t" << Lazio.getPunti() << "\t\tTrad\t" << Lazio.getPuntiTrad() << "\tSomma\t" << Lazio.getPunti()+Lazio.getPuntiTrad() <<  endl;
+  cout << "Milan\t\t" << Milan.getPunti() << "\t\tTrad\t" << Milan.getPuntiTrad() << "\tSomma\t" << Milan.getPunti()+Milan.getPuntiTrad() <<  endl;
+  cout << "Torino\t\t" << Torino.getPunti() << "\t\tTrad\t" << Torino.getPuntiTrad() << "\tSomma\t" << Torino.getPunti()+Torino.getPuntiTrad() <<  endl;
+  cout << "Sampdoria\t" << Sampdoria.getPunti() << "\t\tTrad\t" << Sampdoria.getPuntiTrad() << "\tSomma\t" << Sampdoria.getPunti()+Sampdoria.getPuntiTrad() <<  endl;
+  cout << "Roma\t\t" << Roma.getPunti() << "\t\tTrad\t" << Roma.getPuntiTrad() << "\tSomma\t" << Roma.getPunti()+Roma.getPuntiTrad() <<  endl;
+  cout << "Fiorentina\t" << Fiorentina.getPunti() << "\t\tTrad\t" << Fiorentina.getPuntiTrad() << "\tSomma\t" << Fiorentina.getPunti()+Fiorentina.getPuntiTrad() <<  endl; 
+  cout << "Cagliari\t" << Cagliari.getPunti() << "\t\tTrad\t" << Cagliari.getPuntiTrad() << "\tSomma\t" << Cagliari.getPunti()+Cagliari.getPuntiTrad() <<  endl;  
+  cout << "Atalanta\t" << Atalanta.getPunti() << "\t\tTrad\t" << Atalanta.getPuntiTrad() << "\tSomma\t" << Atalanta.getPunti()+Atalanta.getPuntiTrad() <<  endl; 
+  cout << "Chievo\t\t" << ChievoVerona.getPunti() << "\t\tTrad\t" << ChievoVerona.getPuntiTrad() << "\tSomma\t" << ChievoVerona.getPunti()+ChievoVerona.getPuntiTrad() <<  endl;
+  cout << "Bologna\t\t" << Bologna.getPunti() << "\t\tTrad\t" << Bologna.getPuntiTrad() << "\tSomma\t" << Bologna.getPunti()+Bologna.getPuntiTrad() <<  endl;
+  cout << "Spal\t\t" << Spal.getPunti() << "\t\tTrad\t" << Spal.getPuntiTrad() << "\tSomma\t" << Spal.getPunti()+Spal.getPuntiTrad() <<  endl;
+  cout << "Udinese\t\t" << Udinese.getPunti() << "\t\tTrad\t" << Udinese.getPuntiTrad() << "\tSomma\t" << Udinese.getPunti()+Udinese.getPuntiTrad() <<  endl;
+  cout << "Genoa\t\t" << Genoa.getPunti() << "\t\tTrad\t" << Genoa.getPuntiTrad() << "\tSomma\t" << Genoa.getPunti()+Genoa.getPuntiTrad() <<  endl;
+  cout << "Sassuolo\t" << Sassuolo.getPunti() << "\t\tTrad\t" << Sassuolo.getPuntiTrad() << "\tSomma\t" << Sassuolo.getPunti()+Sassuolo.getPuntiTrad() <<  endl;
+  cout << "Crotone\t\t" << Crotone.getPunti() << "\t\tTrad\t" << Crotone.getPuntiTrad() << "\tSomma\t" << Crotone.getPunti()+Crotone.getPuntiTrad() <<  endl;  
+  cout << "Hellas Verona\t" << HellasVerona.getPunti() << "\t\tTrad\t" << HellasVerona.getPuntiTrad() << "\tSomma\t" << HellasVerona.getPunti()+HellasVerona.getPuntiTrad() <<  endl;
+  cout << "Benevento\t" << Benevento.getPunti() << "\t\tTrad\t" << Benevento.getPuntiTrad() << "\tSomma\t" << Benevento.getPunti()+Benevento.getPuntiTrad() <<  endl;
   return 0;
 }

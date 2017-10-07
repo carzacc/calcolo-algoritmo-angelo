@@ -32,8 +32,11 @@ public:
   float quotaGF;
   float punti;
   int puntiTrad;
+public:
   void aggiungipartita(int GFa,int GSa); //forward declaration, function defined in seriea.cpp
   squadra(); //forward declaration of constructor, defined in seriea.cpp
+  float getPunti();
+  float getPuntiTrad();
 };
 
 
