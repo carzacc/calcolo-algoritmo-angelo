@@ -23,10 +23,13 @@ void partite(int numeropartite)
 {
     bool soloquarta=0;
     bool finoquinta=0;
+    bool finosesta=0;
     if(numeropartite<5)
     soloquarta=1;
     if(numeropartite<6)
     finoquinta=1;
+    if(numeropartite<7)
+    finosesta=1;
     partita("juventus","Cagliari",3,0);
     partita("Verona","Napoli",1,3);
     partita("Atalanta","Roma",0,1);
@@ -68,28 +71,41 @@ void partite(int numeropartite)
     partita("Genoa","Lazio",2,3);
     if(!soloquarta)
     {
-    partita("Bologna","Inter",1,1);
-    partita("Benevento","Roma",0,4);
-    partita("Atalanta","Crotone",5,1);
-    partita("Cagliari","Sassuolo",0,1);
-    partita("Genoa","Chievo",1,1);
-    partita("juventus", "Fiorentina",1,0);
-    partita("Lazio","Napoli",1,4);
-    partita("Milan","Spal",2,0);
-    partita("Udinese","Torino",2,3);
-    partita("Verona", "Sampdoria",0,0);
+      partita("Bologna","Inter",1,1);
+      partita("Benevento","Roma",0,4);
+      partita("Atalanta","Crotone",5,1);
+      partita("Cagliari","Sassuolo",0,1);
+      partita("Genoa","Chievo",1,1);
+      partita("juventus", "Fiorentina",1,0);
+      partita("Lazio","Napoli",1,4);
+      partita("Milan","Spal",2,0);
+      partita("Udinese","Torino",2,3);
+      partita("Verona", "Sampdoria",0,0);
       if(!finoquinta)
       {
-      partita("Roma","Udinese",3,1);
-      partita("Spal","Napoli",2,3);
-      partita("juventus","Torino",4,0);
-      partita("Sampdoria","Milan",2,0);
-      partita("Cagliari","Chievo",0,2);
-      partita("Crotone", "Benevento",2,0);
-      partita("Verona","Lazio",0,3);
-      partita("Inter","Genoa",1,0);
-      partita("Sassuolo", "Bologna",0,1);
-      partita("Fiorentina","Atalanta",1,1);
+        partita("Roma","Udinese",3,1);
+        partita("Spal","Napoli",2,3);
+        partita("juventus","Torino",4,0);
+        partita("Sampdoria","Milan",2,0);
+        partita("Cagliari","Chievo",0,2);
+        partita("Crotone", "Benevento",2,0);
+        partita("Verona","Lazio",0,3);
+        partita("Inter","Genoa",1,0);
+        partita("Sassuolo", "Bologna",0,1);
+        partita("Fiorentina","Atalanta",1,1);
+        if(!finosesta)
+        {
+          partita("Udinese","Sampdoria",4,0);
+          partita("Genoa","Bologna",0,1);
+          partita("Napoli","Cagliari",3,0);
+          partita("Benevento","Inter",1,2);
+          partita("Lazio","Sassuolo",6,1);
+          partita("Torino","Verona",2,2);
+          partita("Chievo","Fiorentina",2,1);
+          partita("Spal","Crotone",1,1);
+          partita("Milan","Roma",0,2);
+          partita("Atalanta","juventus",2,2);
         }
+      }
     }
   }
